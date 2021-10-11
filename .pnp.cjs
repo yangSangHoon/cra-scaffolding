@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@craco/craco", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:6.3.0"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:12.8.3"],
@@ -45,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-router-dom", "npm:5.3.0"],
             ["@yarnpkg/pnpify", "npm:3.0.1"],
             ["axios", "npm:0.21.4"],
+            ["craco-alias", "npm:3.0.1"],
             ["eslint", "npm:7.32.0"],
             ["fastify", "npm:3.21.6"],
             ["prettier", "npm:2.4.1"],
@@ -4026,6 +4028,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@cnakazawa/watch", "npm:1.0.4"],
             ["exec-sh", "npm:0.3.4"],
             ["minimist", "npm:1.2.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@craco/craco", [
+        ["npm:6.3.0", {
+          "packageLocation": "./.yarn/cache/@craco-craco-npm-6.3.0-4eac7788b6-0cc2de18e8.zip/node_modules/@craco/craco/",
+          "packageDependencies": [
+            ["@craco/craco", "npm:6.3.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:6.3.0", {
+          "packageLocation": "./.yarn/__virtual__/@craco-craco-virtual-8af34fe719/0/cache/@craco-craco-npm-6.3.0-4eac7788b6-0cc2de18e8.zip/node_modules/@craco/craco/",
+          "packageDependencies": [
+            ["@craco/craco", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:6.3.0"],
+            ["@types/react-scripts", null],
+            ["cross-spawn", "npm:7.0.3"],
+            ["lodash", "npm:4.17.21"],
+            ["react-scripts", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:4.0.3"],
+            ["semver", "npm:7.3.4"],
+            ["webpack-merge", "npm:4.2.2"]
+          ],
+          "packagePeers": [
+            "@types/react-scripts",
+            "react-scripts"
           ],
           "linkType": "HARD",
         }]
@@ -8500,6 +8528,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parse-json", "npm:5.2.0"],
             ["path-type", "npm:4.0.0"],
             ["yaml", "npm:1.10.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["craco-alias", [
+        ["npm:3.0.1", {
+          "packageLocation": "./.yarn/cache/craco-alias-npm-3.0.1-dc457f5431-8d9a2bf38f.zip/node_modules/craco-alias/",
+          "packageDependencies": [
+            ["craco-alias", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -20099,6 +20136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["test3", "workspace:."],
+            ["@craco/craco", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:6.3.0"],
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:11.2.7"],
             ["@testing-library/user-event", "virtual:a713d1b7538ef14a7dc81a29cfae13e29c1ed08258b1565b5bc8a47f6059b0049d1a8042e50d0a11435ef4948371cfa8914e8880d94f1fc205c0724f339b064f#npm:12.8.3"],
@@ -20109,6 +20147,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-router-dom", "npm:5.3.0"],
             ["@yarnpkg/pnpify", "npm:3.0.1"],
             ["axios", "npm:0.21.4"],
+            ["craco-alias", "npm:3.0.1"],
             ["eslint", "npm:7.32.0"],
             ["fastify", "npm:3.21.6"],
             ["prettier", "npm:2.4.1"],
@@ -21298,6 +21337,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/webpack",
             "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["webpack-merge", [
+        ["npm:4.2.2", {
+          "packageLocation": "./.yarn/cache/webpack-merge-npm-4.2.2-f98139a8eb-ce58bc8ab5.zip/node_modules/webpack-merge/",
+          "packageDependencies": [
+            ["webpack-merge", "npm:4.2.2"],
+            ["lodash", "npm:4.17.21"]
           ],
           "linkType": "HARD",
         }]

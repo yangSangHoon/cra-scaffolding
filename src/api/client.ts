@@ -1,6 +1,12 @@
-import axios from "axios";
+import axios, { AxiosInstance } from "axios";
+import { setInterceptor } from "./filter/intercepor";
 
-const instance: any = axios.create({ timeout: 10000, withCredentials: true });
+const instance: AxiosInstance = axios.create({
+  timeout: 10000,
+  withCredentials: true,
+});
+
+setInterceptor(instance);
 
 instance.interceptors.response.use(
   function (response: any) {
@@ -21,14 +27,10 @@ export const setHeaderCookie = (ctx: any) => {
     } else {
       instance.defaults.headers.Cookie = null;
     }
-
-    // if (instance.defaults.headers.Cookie) {
-    //   instance.defaults.headers.Cookie = cookie;
-    // }
   }
 };
 
-export const get = (url: any, params: any = null) => {
+export const get = <T>(url: string, params: T = null) => {
   return instance({
     method: "get",
     params,
@@ -52,13 +54,9 @@ export const put = (url: any, data = {}, options = {}) => {
   });
 };
 
-export const del = (url: any, options = {}): any => {
-  const customOptions: any = { cache: false, ...options };
-  return instance(
-    {
-      method: "DELETE",
-      url,
-    },
-    customOptions
-  );
+export const del = (url: string, options = {}): any => {
+  return instance({
+    method: "DELETE",
+    url,
+  });
 };
