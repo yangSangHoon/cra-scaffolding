@@ -1,5 +1,5 @@
-import { ProjectModel } from "../model/response/ProjectResponse";
-import { ListModel } from "../model/response/responseModel";
+import { ProjectModel } from "api/model/response/ProjectResponse";
+import { ListModel } from "api/model/response/ListModel";
 
 export const projectsMapper = (response: any): ListModel<ProjectModel> => ({
   total: response.count.total,
