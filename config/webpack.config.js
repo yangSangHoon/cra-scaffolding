@@ -326,7 +326,8 @@ module.exports = function (webpackEnv) {
         .map((ext) => `.${ext}`)
         .filter((ext) => useTypeScript || !ext.includes("ts")),
       alias: {
-        "~api": "api",
+        "~": "",
+        "@api": "api",
         "@components": "components",
         "@lib": "lib",
         "@pages": "pages",

@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { setInterceptor } from "./filter/intercepor";
+import { setInterceptor } from "@api/filter/intercepor";
 
 const instance: AxiosInstance = axios.create({
   timeout: 10000,
@@ -30,7 +30,7 @@ export const setHeaderCookie = (ctx: any) => {
   }
 };
 
-export const get = <T>(url: string, params: T = null) => {
+export const get = <T>(url: string, params?: T) => {
   return instance({
     method: "get",
     params,

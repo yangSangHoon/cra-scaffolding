@@ -12,9 +12,9 @@ import {
   useQuery,
   useQueryClient,
 } from "react-query";
-import { BaseError } from "~/api/model/response/errorModel";
-import { CommonResponse } from "~/api/model/response/responseModel";
-import { ProjectRequestModel } from "~/api/model/request/projectRequest";
+import { BaseError } from "@api/model/response/errorModel";
+import { CommonResponse } from "@api/model/response/responseModel";
+import { ProjectRequestModel } from "@api/model/request/projectRequest";
 import QueryId from "./QueryId";
 
 function useProjectQuery() {
